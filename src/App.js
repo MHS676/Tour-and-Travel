@@ -1,15 +1,15 @@
-
+import React from "react";
+import ReactDOM from "react-dom";
 import "./style.css";
-import Navbar from "./components/navbar"; 
-import { Routes } from "react-router-dom";
+import Navbar from "./components/navbar";
+import reportWebVitals from './reportWebVitals';
 
-export default function App() {
-  return (
-    <div className="App">
-    <Routes>
-      <Navbar/>
-    </Routes> 
-    </div>
-  );
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <Navbar />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
 
+// Report performance metrics
+reportWebVitals();
